@@ -9,4 +9,63 @@
   <span>Score: </span><span id="scoreEl">0</span>
 </p>
 <canvas></canvas>
-<script src="index.js"></script>
+<div id="button-div" style=" 
+            position: relative;
+            z-index: 100;">
+  <div style="
+            cursor: pointer; 
+            position: absolute;
+            bottom:200;
+            left: 0;
+            ">
+    <button id="moveLeft" style="
+            padding: 10px;
+            padding-bottom: 30px;
+            background:transparent;
+            border:none;">
+      <img src="./img/arrow-left.png" alt="Left Button" />
+    </button>
+  </div>
+  <div style="
+            cursor: pointer; 
+            position: absolute;
+            bottom: 200;
+            left: 80;
+            ">
+    <button id="moveRight" style="
+            padding: 10px;
+            padding-bottom: 30px;
+            background:transparent;
+            border:none;">
+      <img src="./img/arrow-right.png" alt="Right Button" />
+    </button>
+  </div>
+  <div style="
+            cursor: pointer; 
+            position: absolute;
+            bottom: 200;
+            left: 290;
+            ">
+    <button id="moveUp" style="
+            padding: 10px;
+            padding-bottom: 30px;
+            background:transparent;
+            border:none;">
+      <img src="./img/arrow-up.png" alt="Up Button" />
+    </button>
+  </div>
+  <div style="
+            cursor: pointer; 
+            position: absolute;
+            bottom: 200;
+            left: 370;
+            ">
+    <button id="moveDown" style="
+            padding: 10px;
+            padding-bottom: 30px;
+            background:transparent;
+            border:none;">
+      <img src="./img/arrow-down.png" alt="Down Button" />
+    </button>
+  </div>
+  <script src="index.js"></script>
