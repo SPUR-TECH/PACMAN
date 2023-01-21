@@ -1,6 +1,8 @@
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
+const scoreEl = document.querySelector('#scoreEl')
+
 canvas.width = innerWidth
 canvas.height = innerHeight
 
@@ -97,9 +99,11 @@ const keys = {
 
 let lastKey = ''
 
+let score = 0
+
 const map = [
     ['1', '-', '-', '-', '-', '-', '-', '-', '-', '-', '2'],
-    ['|', '.', '.', '.', '.', '.', '.', '.', '.', '.', '|'],
+    ['|', ' ', '.', '.', '.', '.', '.', '.', '.', '.', '|'],
     ['|', '.', 'b', '.', '[', '7', ']', '.', 'b', '.', '|'],
     ['|', '.', '.', '.', '.', '_', '.', '.', '.', '.', '|'],
     ['|', '.', '[', ']', '.', '.', '.', '[', ']', '.', '|'],
@@ -434,6 +438,8 @@ function animate() {
             pellet.radius + player.radius
         ) {
             pellets.splice(i, 1)
+            score += 10
+            scoreEl.innerHTML = score
         }
     }
 
