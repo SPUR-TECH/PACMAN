@@ -1,15 +1,20 @@
 <style>
   body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     background-color: black;
-    padding: 10px 20px;
+    padding-left: 200px;
+    margin-left: 0px;
   }
 </style>
-<p style="color: white; font-family: sans-serif; font-size: 14px; margin-bottom: 6px;">
+<p style="color: white; font-family: sans-serif; font-size: 24px; margin-bottom: 30px; margin-left: -200px;">
   <span>Score: </span><span id="scoreEl">0</span>
 </p>
 <canvas></canvas>
-<div id="button-div" style=" 
+<!-- <div id="button-div" style=" 
             position: relative;
             z-index: 100;">
   <div style="
@@ -67,5 +72,5 @@
             border:none;">
       <img src="./img/arrow-down.png" alt="Down Button" />
     </button>
-  </div>
-  <script src="index.js"></script>
+  </div> -->
+<script src="index.js"></script>
