@@ -3,7 +3,7 @@ const c = canvas.getContext('2d')
 
 const scoreEl = document.querySelector('#scoreEl')
 
-canvas.width = 1024
+canvas.width = 440
 canvas.height = 876
 
 class Boundary {
